@@ -21,7 +21,7 @@
 			$daftar = $this->db->query("SELECT * FROM transaksi JOIN siswa ON siswa.`NIS` = transaksi.`NIS` WHERE transaksi.`NIS`= '${nis}'");
 			return $daftar;
 		}
-		public function HapusDataguru($nis){
+		public function HapusDatasiswa($nis){
             $hapus = $this->db->query("DELETE FROM siswa WHERE NIS ='${nis}'");
         }
 		
