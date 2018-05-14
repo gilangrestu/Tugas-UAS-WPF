@@ -12,7 +12,7 @@
 		if(is_file("../../admin/gambar/".$foto))
             unlink("../../admin/gambar/".$foto);
 		
-        $guru->HapusDataguru($_GET["NIS"]);
+        $guru->HapusDatasiswa($_GET["NIS"]);
 	    header("location:../../admin/admin.php");
 	}
  ?>
